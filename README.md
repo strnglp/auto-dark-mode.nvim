@@ -44,4 +44,6 @@ You can disable `aut-dark-mode.nvim` at runtime via `lua require('aut-dark-mode'
 
 ## Requirements
 * macOS
+or
+* Linux + xdg-desktop-portal + gsettings
 * Neovim
