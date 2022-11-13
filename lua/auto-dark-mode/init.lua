@@ -24,7 +24,6 @@ local function check_is_dark_mode(callback)
   elseif current_os == 'linux' then
     utils.start_job('gsettings get org.gnome.desktop.interface color-scheme', {
       on_stdout = function(data)
-        for i,v in ipairs(data) do print(i,v) end
         local is_dark_mode = data[1]:lower():find('dark')
         callback(is_dark_mode)
       end
